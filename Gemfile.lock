@@ -110,6 +110,10 @@ GEM
       multi_json (~> 1.0)
     faker (1.0.1)
       i18n (~> 0.4)
+    faraday (0.7.6)
+      addressable (~> 2.2)
+      multipart-post (~> 1.1)
+      rack (~> 1.1)
     ffi (1.0.11)
     foreman (0.39.0)
       term-ansicolor (~> 1.0.7)
@@ -152,17 +156,27 @@ GEM
     modularity (0.6.1)
     multi_json (1.0.4)
     multi_xml (0.4.1)
+    multipart-post (1.1.5)
     mysql2 (0.3.11)
     net-ldap (0.2.2)
     nokogiri (1.5.0)
+    oauth2 (0.5.2)
+      faraday (~> 0.7)
+      multi_json (~> 1.0)
     omniauth (1.0.2)
       hashie (~> 1.2)
       rack
+    omniauth-google-oauth2 (0.1.9)
+      omniauth (~> 1.0)
+      omniauth-oauth2
     omniauth-ldap (1.0.2)
       net-ldap (~> 0.2.2)
       omniauth (~> 1.0)
       pyu-ruby-sasl (~> 0.0.3.1)
       rubyntlm (~> 0.1.1)
+    omniauth-oauth2 (1.0.0)
+      oauth2 (~> 0.5.0)
+      omniauth (~> 1.0)
     orm_adapter (0.0.6)
     polyglot (0.3.3)
     posix-spawn (0.3.6)
@@ -329,6 +343,7 @@ DEPENDENCIES
   letter_opener
   modularity
   mysql2
+  omniauth-google-oauth2 (~> 0.1.9)
   omniauth-ldap
   pry
   pygments.rb (= 0.2.7)

@@ -78,6 +78,11 @@ class User < ActiveRecord::Base
     name.split(" ").first unless name.blank?
   end
 
+  def self.find_for_google_auth(info)
+    email = omniauth_info.email.downcase
+    User.find_by_email(email)
+  end
+
   def self.find_for_ldap_auth(omniauth_info)
     name = omniauth_info.name
     email = omniauth_info.email.downcase
