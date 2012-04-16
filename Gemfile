@@ -32,7 +32,7 @@ gem "charlock_holmes"
 gem "foreman"
 gem "omniauth-ldap"
 gem "omniauth-google-oauth2", "~> 0.1.9"
-gem 'bootstrap-sass', "1.4.4"
+gem 'bootstrap-sass', "2.0.2"
 gem "colored"
 gem 'yaml_db', :git => "https://github.com/gitlabhq/yaml_db.git"
 gem 'modularity'
